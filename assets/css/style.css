@@ -1,0 +1,31 @@
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .reel {
+    width: 20px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  
+  
+  #spinButton {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  
+  
