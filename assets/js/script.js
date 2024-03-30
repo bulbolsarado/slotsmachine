@@ -25,6 +25,14 @@ function populateReels() {
     reel.textContent = getRandomSymbol() + "\n" + getRandomSymbol() + "\n" + getRandomSymbol();
   });
 }
+function populateReels() {
+  const reels = document.querySelectorAll('.reel');
+  reels.forEach(reel => {
+    const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+    reel.style.backgroundImage = `url(${randomSymbol})`;
+    reel.textContent = getRandomSymbol() + "\n" + getRandomSymbol() + "\n" + getRandomSymbol();
+  });
+}
 
 function showJackpotPopup(prize) {
   balance += prize; // Add the prize amount to the balance
