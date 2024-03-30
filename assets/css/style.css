@@ -1,8 +1,19 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/main-bg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif; /* Example font-family */
+}
+
 .mainslots {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .betform {
@@ -19,14 +30,22 @@
     align-items: center;
     height: 190px;
   }
+  .machine {
+    position: absolute;
+    z-index: -2;
+    width: 450px;
+    margin-top: -80px;
+    margin-right: -25px;
+
+  }
   .reel {
-    width: 100px;
-    height: 200px;
+    width: 76px;
+    height: 154px;
     font-size: 56px;
     text-align: center;
     border: 2px solid #000;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: -50px 13px 0 13px;
     display: flex;
     align-items: center;
     position: relative;
@@ -60,6 +79,41 @@
     background-position: center 25%;
   }
   
+
+  .balance .balance-text {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .balance .balance-amount {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+   /* Add this CSS to make balance text bigger and style it */
+.balance {
+  text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 14%;
+    flex-direction: column;
+}
+
+.balance-text {
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.balance-amount {
+  font-size: 32px; /* Adjust font size as needed */
+}
+
+/* Adjust the button size */
+.betform button {
+  font-size: 18px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
   
   /* .reel {
     width: 60px;
@@ -102,9 +156,35 @@
   #spinButton {
     margin-top: 20px;
     font-size: 18px;
-    padding: 10px 20px;
+    position: absolute;
+    bottom: 19.5%;
+    padding: 20px 40px;
     cursor: pointer;
+    background-color: orange;
+    color: white;
+    border-radius: 12px;
   }
 
+  .betform label {
+    color: white;
+    font-size: 1rem;
+    text-wrap: wrap;
+    width: 50%;
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -70px;
+  }
+
+
+  #betAmount {
+    position: absolute;
+    bottom: 30%;
+    padding: 20px;
+    border-radius: 12px;
+    outline: 0;
+    font-size: 1rem;
+  }
   
   

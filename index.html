@@ -9,13 +9,14 @@
 <body>
   <div class="mainslots">
     <div class="balance">
-      <p>Balance: $<span id="balance">100</span></p>
+      <span class="balance-text">Balance: </span><span class="balance-amount">$<span id="balance">100</span></span>
     </div>
     <div class="slot-machine">
       <div class="reel" id="reel1"></div>
       <div class="reel" id="reel2"></div>
       <div class="reel" id="reel3"></div>
     </div>
+    <img class="machine" src="./assets/images/slots-machine.png" alt="">
     <div class="betform">
       <label>BET NOW! Please enter the amount you want to bet. Good luck!</label>
       <input type="number" id="betAmount" placeholder="Enter bet amount" min="1">
