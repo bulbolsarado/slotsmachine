@@ -1,3 +1,17 @@
+.mainslots {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.betform {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .slot-machine {
     display: flex;
     justify-content: center;
