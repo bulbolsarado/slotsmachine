@@ -169,11 +169,11 @@ body {
   #spinButton:disabled {
     cursor: not-allowed; /* Change cursor style */
     background-color: rgb(206, 104, 138);
-    color: #ffffff
+    color: #a92f58;
   }
 
   .betform label {
-    color: white;
+    color: rgb(245, 171, 171);
     font-size: 1rem;
     background: #9C27B0;
     padding: 20px;
