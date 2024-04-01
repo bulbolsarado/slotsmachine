@@ -213,6 +213,10 @@ body {
     border: 0;
   }
 
+.reel, #balance {
+    user-select: none; /* Prevent symbol selection */
+}
+
   /* //texteffect */
   @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300:700:900&display=swap");
  body {
