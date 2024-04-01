@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcode Generator</title>
-    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Machine</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <label for="itemName">Item Name:</label>
-    <input type="text" id="itemName">
-    <br>
-    <label for="itemID">Item ID:</label>
-    <input type="text" id="itemID">
-    <br>
-    <label for="itemWeight">Item Weight:</label>
-    <input type="text" id="itemWeight">
-    <br>
-    <button onclick="saveItem()">Save</button>
-    <button onclick="printBarcode()">Print</button>
-    <br>
-    <hr>
-    <div id="barcode"></div>
 
-    <script src="barcode-generator.js"></script>
+  <div class="mainslots">
+    <div class="balance">
+      <span class="balance-text">Balance: </span>
+      <span class="balance-amount">
+        $<span id="balance" data-value="100">100</span> 
+      </span>
+    </div>
+    <div class="slot-machine">
+      <div class="reel" id="reel1"></div>
+      <div class="reel" id="reel2"></div>
+      <div class="reel" id="reel3"></div>
+    </div>
+    <img class="machine" src="./assets/images/slots-machine.png" alt="">
+    <div class="betform">
+      <div class="form-wrapper">
+        <label>Please enter your bet amount</label>
+        <input type="number" id="betAmount" placeholder="Enter bet amount" min="1">
+      </div>
+      <button id="spinButton" disabled>SPIN</button>
+    </div>
+  </div>
+
+  
+  <div class="title-wrapper">
+    <h1 class="sweet-title">
+      <span data-text="BET">BET</span>
+      <span data-text="NOW!">NOW!</span>
+    </h1>
+    <span class="top-title">Show me the money!</span>
+    <span class="bottom-title">Daily Bonus</span>
+    </div>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
